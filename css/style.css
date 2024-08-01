@@ -1,0 +1,126 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: var(--cmn_ubuntu);
+    
+}
+.row{
+    display: flex;
+    flex-wrap: wrap;
+    background-color: var(--cmn_color);
+    color: white;
+}
+header .row{
+    justify-content: space-between;
+}
+header span{
+    padding: 13px 6px;
+}
+
+:root{
+    --cmn_color:#0f2f44;
+    --cmn_color2:#8484bf;
+    --cmn_ubuntu:"Ubuntu", sans-serif;
+    --cmn_open:"Open Sans", sans-serif;
+    --cmn_abril: "Abril Fatface", serif;
+}
+.nabver-section{
+    display: flex;
+    justify-content: space-between;
+}
+.nav-list{
+    display: flex;
+    margin-top: 12px 0 2px 0;
+}
+.nav-list li {
+    padding: 17px 13px;
+    list-style-type: none;
+    position: relative;
+}
+.nav-list li a{
+    text-decoration: none;
+    color: black;
+    font-size: 18px;
+}
+.nav-list li:hover{
+    background-color: rgb(213, 213, 32);
+    transition: 0.5s;
+}
+.logo-img{
+    padding: 17px 13px;
+    margin-top: 12px 0 2px 0;
+
+}
+.trith-section{
+    background-image: url(../images/bg-1.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 500px;
+}
+
+.our-ambition{
+    padding-left: 20px;
+}
+.your{
+    padding-top: 70px;
+    font-size: 50px;
+}
+.success{
+    font-size: 65px;
+    font-family: var(--cmn_abril);
+    letter-spacing: 1.5px;
+}
+.our{
+    font-size: 20px;
+    letter-spacing: 9px;
+    color: #8484bf;
+}
+.dami-text{
+    padding-top: 10px;
+    letter-spacing: 0.5px;
+    word-spacing: 1.5px;
+    line-height: 20px;
+    color: #444444;
+}
+.espore{
+    display: flex;
+    align-items: center;
+    padding-top: 28px;
+}
+.more{
+    text-decoration: none;
+    color:white;
+    background-color: #8484bf;
+    padding: 14px 14px;
+    border-radius: 10px;
+}
+.more:hover{
+    background-color: purple;
+    transition: 0.5s;
+}
+.video-logo{
+    padding-left: 5px;
+}
+.nabver-section ul li:hover .dropdown-menu{
+    display: block;
+    position: absolute;
+    left: 0;
+    top: 100%;
+    background-color:white;
+    /* padding: 0px 10px; */
+}
+.nabver-section ul li:hover .dropdown-menu ul{
+    display: block;
+    /* margin: 10px; */
+}
+.nabver-section ul li:hover .dropdown-menu ul li{
+    width: 150px;
+    padding: 10px;
+}
+.dropdown-menu{
+    display: none;
+}
